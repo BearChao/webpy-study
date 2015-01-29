@@ -1,0 +1,11 @@
+$def with (todos)
+<ol>
+$for todo in todos:
+    <li id="t$todo.id">$todo.title</li>
+</ol>
+<form method="post" action="add">
+<p><input type="text" name="title" /> <input type="submit" value="Add" /></p>
+</form>
+<form method="post" action="del">
+<p><input type="text" name="id" /> <input type="submit" value="Del" /></p>
+</form>
